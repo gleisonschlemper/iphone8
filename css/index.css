@@ -1,0 +1,45 @@
+
+*{margin: 0;padding: 0;box-sizing: border-box;text-decoration: none;list-style-type: none;}
+body{overflow-x: hidden;}
+header{background-color: rgba(82, 83, 107, 0.897);height: 50px;}
+.cabecalho-header{height: 50px;max-width: 1100px;margin: auto;display: flex;justify-content: flex-start;}
+.cabecalho-img{height: 50px;width: 100px;display: flex;align-items: center;justify-content: center;}
+.img{height: 40px;width: 80px;}
+/*logo da imagem do cabecalho direita*/
+.cabecalho-home{display: flex;width: 1000px;}
+.cabecalho-home ol{display: flex;}
+.cabecalho-home li a{color: rgba(255, 255, 255, 0.959); padding:  5px ;font-family: Arial, Helvetica, sans-serif;font-size: 20px;}
+.cabecalho-home li{padding-left: 20px;padding-right: 20px;}
+.cabecalho-home a:hover{border-bottom: 2px solid rgb(255, 255, 255);color: rgb(255, 255, 255);background-color: rgba(125, 17, 197, 0.952);}
+.mobile{display: flex;align-items: center;justify-content: center;}
+.mobile-menu{display: none;}
+/*parte do menu da esquerda*/
+.banner{height: calc(100vh - 50px);background-image: linear-gradient(to left, rgb(23, 178, 184), rgba(125, 17, 197, 0.952));}
+.main-banner{margin: auto;max-width: 1100px;height: calc(100vh - 50px);display: flex;}
+.banner-conteudo{height: 100%;width: 50%;display: flex;align-items: center;justify-content: center;}
+.conteudo{width: 90%;height: 100%;display: flex;flex-direction: column;align-items: center;justify-content: center;;gap: 50px}
+.banner-titulos{height: auto;width: 100%;font-family: "Roboto";font-weight: bolder;text-transform: uppercase;font-size: 50px;color: darkorange;}
+.banner-sub-texto{height:auto;width:100%;font-family: Arial, Helvetica, sans-serif;font-size: 20px;color: white;}
+.banner-text-body{height: auto;width: 100%;}
+.botão{width: 150px;height: 40px;border-radius: 10px;}
+.banner-img{height: 100%;width: 50%;;display: flex;align-items: center;justify-content: center;cursor: pointer;}
+.imagem{width: 80%;height: 70%;}
+@media(max-width:900px){
+    .mobile{display: flex;justify-content: flex-end;margin-right: 10px;flex-direction: column;}
+    
+.mobile-menu{display: flex;justify-content: center;align-items: center;}
+    nav{ display:block;position: absolute;margin-top: 100px;}
+ol{display: flex;flex-direction: column;}
+    .main-banner{margin: auto;max-width: 1100px;height: calc(100vh - 50px);display: block; flex-direction: column;}
+    .banner-conteudo{height: 50%;width: 100%;}
+    .banner-img{height: 50%;width: 100%;}
+    .imagem{width: 80%;height: 80%;}
+    .conteudo{width: 90%;height: 100%;display: flex;flex-direction: column;align-items: center;justify-content: center;;gap: inherit}
+    .banner-titulos{height: auto;width: auto;font-family: "Roboto";font-weight: bolder;text-transform: uppercase;font-size: 20px;color: darkorange;}
+    .banner-sub-texto{height:auto;width:auto;font-family: Arial, Helvetica, sans-serif;font-size: inherit;color: white;}
+   .botão{width: 100px;height: 25px;border-radius: 10px;}
+    .banner-text-body{height: auto;width: auto;}
+}
+    
+
+

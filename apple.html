@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Apple oficial</title>
+    <style>
+*{margin: 0;padding: 0;box-sizing: border-box;text-decoration: none;list-style-type: none;}
+body{overflow-x: hidden;}
+header{background-color: rgba(82, 83, 107, 0.897);height: 50px;}
+.cabecalho-header{height: 50px;max-width: 1100px;margin: auto;display: flex;justify-content: flex-start;}
+.cabecalho-img{height: 50px;width: 100px;display: flex;align-items: center;justify-content: center;}
+.img{height: 40px;width: 80px;}
+/*logo da imagem do cabecalho direita*/
+.cabecalho-home{display: flex;width: 1000px;}
+.cabecalho-home ol{display: flex;}
+.cabecalho-home li a{color: rgba(255, 255, 255, 0.959); padding:  5px ;font-family: Arial, Helvetica, sans-serif;font-size: 20px;}
+.cabecalho-home li{padding-left: 20px;padding-right: 20px;}
+.cabecalho-home a:hover{border-bottom: 2px solid rgb(255, 255, 255);color: rgb(255, 255, 255);background-color: rgba(125, 17, 197, 0.952);}
+.mobile{display: flex;align-items: center;justify-content: center;}
+.mobile-menu{display: none;}
+/*parte do menu da esquerda*/
+.banner{height: calc(100vh - 50px);background-image: linear-gradient(to left, rgb(23, 178, 184), rgba(125, 17, 197, 0.952));}
+.main-banner{margin: auto;max-width: 1100px;height: calc(100vh - 50px);display: flex;}
+.banner-conteudo{height: 100%;width: 50%;display: flex;align-items: center;justify-content: center;}
+.conteudo{width: 90%;height: 100%;display: flex;flex-direction: column;align-items: center;justify-content: center;;gap: 50px}
+.banner-titulos{height: auto;width: 100%;font-family: "Roboto";font-weight: bolder;text-transform: uppercase;font-size: 50px;color: darkorange;}
+.banner-sub-texto{height:auto;width:100%;font-family: Arial, Helvetica, sans-serif;font-size: 20px;color: white;}
+.banner-text-body{height: auto;width: 100%;}
+.botão{width: 150px;height: 40px;border-radius: 10px;}
+.banner-img{height: 100%;width: 50%;;display: flex;align-items: center;justify-content: center;cursor: pointer;}
+.imagem{width: 80%;height: 70%;}
+@media(max-width:900px){
+    .mobile{display: flex;justify-content: center;margin-right: 10px;flex-direction: column;}
+    /**/
+
+    nav{ display:none;position: absolute;margin-top: 100px;}
+ .mobile-menu{display: flex;justify-content: center;align-items: center;}   
+ol{display: flex;flex-direction: column;}
+    .main-banner{margin: auto;max-width: 1100px;height: calc(100vh - 50px);display: block; flex-direction: column;}
+    .banner-conteudo{height: 50%;width: 100%;}
+    .banner-img{height: 50%;width: 100%;}
+    .imagem{width: 80%;height: 80%;}
+    .conteudo{width: 90%;height: 100%;display: flex;flex-direction: column;align-items: center;justify-content: center;;gap: inherit}
+    .banner-titulos{height: auto;width: auto;font-family: "Roboto";font-weight: bolder;text-transform: uppercase;font-size: 20px;color: darkorange;}
+    .banner-sub-texto{height:auto;width:auto;font-family: Arial, Helvetica, sans-serif;font-size: inherit;color: white;}
+   .botão{width: 100px;height: 25px;border-radius: 10px;}
+    .banner-text-body{height: auto;width: auto;}
+}
+
+    </style>
+
+<body>
+    <header>
+<div class="cabecalho-header">
+<div class="cabecalho-img">
+<div class="img">
+<img src="foto/logo-img.png" alt="" style="width: 100%;height: 100%;">
+</div><!-- img-->
+</div><!--cabecalho-img só da imagem da logo-->
+
+<div class="cabecalho-home">
+
+<div style=" width: 40%;height: 50px;display: flex;align-items: center;justify-content: center;">
+<button style="width: 100px;height: 30px;border-radius: 10px;"><a href="">loja virtual</a></button>
+</div>
+<!--sobre o botão-->
+<!--fazer amanhã -->
+<div style="width: 60%;height: 50px;" class="mobile">
+<button class="mobile-menu" style="width: 50px;height: 30px;background-color: aqua;border: none;">&#9776</button>  
+<nav>
+    <ol>
+        <li><a href="">home</a></li>
+        <li><a href="">telefone</a></li>
+        <li><a href="">suporte</a></li>
+        <li><a href="iphone 8.html">iphone 8</a></li>
+    </ol>
+</nav>
+</div><!-- sobre o menu mobile-->
+</div><!-- cabecalho-home-->
+</div><!--cabecalho-header-->
+    </header>
+    <main>
+        <section class="banner">
+<div class="main-banner">
+
+<div class="banner-conteudo">
+<div class="conteudo">
+<div class="banner-titulos">iphone 8 plus agora melhor do que nunca</div>
+<div class="banner-sub-texto">O iPhone 8 Plus vem com todos os acessórios encontrados em seu antecessor: carregador, cabo USB, fone de ouvido, adaptador para P2, manuais e chave da gaveta SIM.<br>
+<a href="" style="color: yellow;">saiba mais</a></div>
+<div class="banner-text-body"><button style="border: 2px solid white;background-color: blue;" class="botão"><a href="cadastro.html" style="color: white;">Compre agora</a></button></div>
+</div><!--conteudo-->
+</div><!-- main-banner -->
+
+<div class="banner-img">
+<div class="imagem">
+<img src="foto/celular.png" alt="" style="width: 100%;height: 100%;">
+</div>
+</div><!--banner-img-->
+
+</div><!-- "main-banne -->
+        </section><!-- banner -->
+
+
+
+
+
+    </main>
+</body>
+</html>
